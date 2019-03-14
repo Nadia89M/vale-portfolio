@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block content %}
+<!-- Photos -->
+<section id="photos" class="py-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h2 class="py-5">Portfolio</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            {% if photos %}
+                {% for photo in photos %}
+                    {% if photo.is_published %}
+                        <div class="col-md-4 mb-3">
+                            <div class="text-container">
+                                <a href="{{photo.photo_main.url}}" data-lightbox="photos" data-title="{{photo.title}}">
+                                    <img src="{{photo.photo_main.url}}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                    {% else %}
+                        <div class="col-md-12">
+                            <p>No Photos Available</p>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                <div class="col-md-12">
+                    <p>No Photos Available</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+{% endblock %}

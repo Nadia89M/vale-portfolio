@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+
+    <div class="row text-center">
+        <div class="col-md-12">
+            <h2 class="py-5">Contact Me</h2>
+        </div>
+    </div>
+
+    <form method="POST">
+        <div class="form-group">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="submit" class="btn btn-danger" value="Submit"> 
+        </div>
+    </form>
+
+    <!-- <form>
+        <div class="form-group">
+            <label for="exampleInputName">Name</label>
+            <input type="text" class="form-control" id="exampleInputName" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputMessage">Message</label>
+            <textarea class="form-control" id="exampleInputMessage">Enter Message</textarea>
+        </div>
+        <button type="submit" class="btn btn-danger">Submit</button>
+    </form> -->
+
+</div>
+{% endblock %}
