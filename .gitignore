@@ -8,4 +8,3 @@ db.sqlite3
 venv
 /static
 /.vscode
-/django_portfolio/settings.py
