@@ -30,7 +30,6 @@ def contact(request):
               'There has been an inquiry. Sign into the admin panel for more info.',
               'nadia.mohamed89@gmail.com',
               ['nadia.mohamed89@gmail.com'],
-              fail_silently=False
             )
             return thanks(request)
 
