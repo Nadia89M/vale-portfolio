@@ -54,8 +54,8 @@ body {
   text-decoration: none;
 }
 .home-container {
-  /* background: linear-gradient(to right,  rgba(0, 0, 0, 0.5),  rgba(255, 1, 1, 0.65)), url("../img/bg-picture.jpg") no-repeat center center / cover; */
-  background: linear-gradient(to right,  rgba(0, 0, 0, 0.3),  rgba(0, 0, 0, 0.7)), url("../img/img_3.jpg") no-repeat center center / cover;
+  background: linear-gradient(to right,  rgba(0, 0, 0, 0.5),  rgba(255, 1, 1, 0.65)), url("../img/bg-picture.jpg") no-repeat center center / cover;
+  /* background: linear-gradient(to right,  rgba(0, 0, 0, 0.3),  rgba(0, 0, 0, 0.7)), url("../img/img_3.jpg") no-repeat center center / cover; */
   justify-content: center;
   height: 100vh;
   width: 100%;
