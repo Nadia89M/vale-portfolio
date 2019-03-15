@@ -86,8 +86,7 @@ DATABASES = {
         'NAME': 'portfoliodb',
         'USER': os.environ.get('DB_USER'),
         'PASSWORD': os.environ.get('DB_PASSWORD'),
-        'HOST': 'localhost',
-        'PORT': '',
+        'HOST': 'localhost'
     }
 }
 
