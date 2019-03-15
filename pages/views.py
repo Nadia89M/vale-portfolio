@@ -24,14 +24,14 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save(commit=True)
-            # Send email
-            # send_mail(
-            #   'Contact Inquiry',
-            #   'There has been an inquiry. Sign into the admin panel for more info.',
-            #   'nadia.mohamed89@gmail.com',
-            #   ['nadia.mohamed89@gmail.com'],
-            #   fail_silently=False
-            # )
+            Send email
+            send_mail(
+              'Contact Inquiry',
+              'There has been an inquiry. Sign into the admin panel for more info.',
+              'nadia.mohamed89@gmail.com',
+              ['nadia.mohamed89@gmail.com'],
+              fail_silently=False
+            )
             return thanks(request)
 
     return render(request, 'pages/contact.html', {'form': form})
