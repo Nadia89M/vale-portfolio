@@ -24,7 +24,7 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save(commit=True)
-            Send email
+            #Send email
             send_mail(
               'Contact Inquiry',
               'There has been an inquiry. Sign into the admin panel for more info.',
