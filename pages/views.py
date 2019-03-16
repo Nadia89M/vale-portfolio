@@ -6,7 +6,7 @@ from contact.forms import ContactForm
 
 
 def index(request):
-    categories = Category.objects.all()
+    categories = Category.objects.all().order_by('id').reverse()[:3]
     context = {
         'categories': categories,
     }

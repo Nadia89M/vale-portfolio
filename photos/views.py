@@ -1,12 +1,13 @@
 from django.shortcuts import get_object_or_404, render
-from .models import Photo
+from categories.models import Category
+from .models import Photo 
 
 # Create your views here.
 
 def index(request):
-    photos = Photo.objects.all()
+    categories = Category.objects.all()
     context = {
-        'photos' : photos
+        'categories': categories,
     }
     return render(request, 'photos/photos.html', context)
 
