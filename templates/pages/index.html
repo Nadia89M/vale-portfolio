@@ -96,13 +96,13 @@
             </div>
         </div>
         <div class="row text-center">
-            {% if categories %}
-                {% for category in categories %}
+            {% if subcategories %}
+                {% for subcategory in subcategories %}
                 <div class="col-md-4 mb-3">
                     <div class="text-container">
-                        <img src="{{category.category_photo.url}}" alt="" class="mb-3 img-fluid homepage-img">
+                        <img src="{{subcategory.subcategory_photo.url}}" alt="" class="mb-3 img-fluid homepage-img">
                         <div class="centered">
-                            <h5><a href="portfolio/{{ category.slug }}">{{ category.name }}</a></h5>
+                            <h5><a href="portfolio/{{ subcategory.category.slug }}/{{subcategory.slug}}">{{ subcategory.name }}</a></h5>
                         </div>
                     </div>
                 </div>

@@ -1,14 +1,14 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
 from django.conf import settings
-from categories.models import Category
+from categories.models import Subcategory
 from contact.forms import ContactForm
 
 
 def index(request):
-    categories = Category.objects.all().order_by('id').reverse()[:3]
+    subcategories = Subcategory.objects.all().order_by('id').reverse()[:3]
     context = {
-        'categories': categories,
+        'subcategories': subcategories,
     }
     return render(request, 'pages/index.html', context)
 
