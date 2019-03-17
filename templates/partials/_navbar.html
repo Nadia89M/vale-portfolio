@@ -42,7 +42,7 @@
         </div>
     </div>
 </nav> -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark" >
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
       <a class="navbar-brand" href="{% url 'index' %}">
         <img src="{% static 'img/white-logo.png' %}" alt="" class="img-fluid" style="width: auto; height: 10vh;">
       </a>
@@ -69,13 +69,34 @@
             {% endif %}>
               <a class="nav-link" href="{% url 'about' %}">About</a>
           </li>
+          <!-- <li 
+            {% if 'portfolio' in request.path %} 
+              class="nav-item dropdown active mr-3" 
+            {% else %} 
+              class="nav-item dropdown mr-3"
+            {% endif %}>
+            <a class="nav-link dropdown-toggle" href="{% url 'categories' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            {% for category in categories %}
+              <a class="dropdown-item" href="#">{{category.name}}</a>
+            {% endfor %}
+            </div>
+          </li> -->
+          <li 
+            {% if 'services' in request.path %} 
+              class="nav-item active mr-3" 
+            {% else %} 
+              class="nav-item mr-3"
+            {% endif %}>
+            <a class="nav-link" href="{% url 'services' %}">Services</a>
+          </li>
           <li 
             {% if 'portfolio' in request.path %} 
               class="nav-item active mr-3" 
             {% else %} 
               class="nav-item mr-3"
             {% endif %}>
-              <a class="nav-link" href="{% url 'categories' %}">Portfolio</a>
+            <a class="nav-link" href="{% url 'categories' %}">Portfolio</a>
           </li>
           <li 
             {% if 'contact' in request.path %} 
@@ -84,6 +105,17 @@
               class="nav-item mr-3"
             {% endif %}>
               <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li>
+            <a href="https://www.instagram.com/thephotologyst_/" class="nav-link animated fadeInLeft"><ion-icon name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/thephotologyst/" class="nav-link animated fadeInLeft"><ion-icon name="logo-facebook"></ion-icon></ion-icon></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/marzia-melita-581669182/" class="nav-link animated fadeInLeft"><ion-icon name="logo-linkedin"></ion-icon></a>
           </li>
         </ul>
       </div>

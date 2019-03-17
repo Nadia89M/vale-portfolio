@@ -18,6 +18,9 @@ def about(request):
 def thanks(request):
     return render(request, 'pages/thanks.html', {})
 
+def services(request):
+    return render(request, 'pages/services.html', {})
+
 def contact(request):
     form = ContactForm()
     if request.method == "POST":
