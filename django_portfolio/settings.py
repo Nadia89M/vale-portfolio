@@ -42,9 +42,15 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig',
     'categories.apps.CategoriesConfig',
     'photos.apps.PhotosConfig',
+    'posts.apps.PostsConfig',
     'contact.apps.ContactConfig',
     'storages',
+    'ckeditor',
+    'ckeditor_uploader',
 ]
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -116,4 +116,28 @@ h2:after {
   font-size: 250%;
 }
 
+.post-container {
+  border: solid 1px grey;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 3rem;
+}
+
+.post-title {
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.blog-link {
+  font-style: italic;
+}
+
+@media only screen and (max-width: 991px) {
+  .circular--landscape {
+    padding-top: 10px;
+  }
+}
 
