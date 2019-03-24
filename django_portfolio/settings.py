@@ -160,6 +160,7 @@ AWS_S3_REGION_NAME = 'eu-west-2'
 
 AWS_S3_BUCKET_AUTH = False
 AWS_QUERYSTRING_AUTH = False
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
