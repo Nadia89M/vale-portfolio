@@ -141,9 +141,12 @@ h2:after {
   text-transform: capitalize;
 }
 
-@media only screen and (max-width: 991px) {
-  .circular--landscape {
-    padding-top: 10px;
-  }
+.post-container {
+  margin: 3rem;
 }
+
+.service-section {
+  padding-bottom: 3rem;
+}
+
 
