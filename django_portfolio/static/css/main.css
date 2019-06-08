@@ -197,3 +197,7 @@ h2:after {
   font-weight: bold;
   color: rgb(255, 1, 1);
 }
+
+.btn-galleries {
+  float: right !important;
+}
