@@ -97,7 +97,8 @@ h2:after {
   letter-spacing: 8px;
 }
 
-.circular--landscape {
+.circular--landscape,
+.circular--landscape1 {
   display: inline-block;
   position: relative;
   width: 200px;
@@ -110,6 +111,12 @@ h2:after {
   width: auto;
   height: 100%;
   margin-left: -50px;
+}
+
+.circular--landscape1 img {
+  width: 100%;
+  height: auto;
+  margin-top: -50px;
 }
 
 .nav-link ion-icon {
@@ -149,4 +156,19 @@ h2:after {
   padding-bottom: 3rem;
 }
 
+.service-section:hover {
+  border: 2px solid rgb(255, 1, 1);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding-top: 10px;
+}
+
+.post_date {
+  text-align: left;
+  font-size: 80%;
+  font-weight: bold;
+}
 

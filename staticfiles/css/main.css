@@ -142,11 +142,16 @@ h2:after {
 }
 
 .post-container {
-  margin: 3rem;
+  margin: 3rem  0.5rem;
 }
 
 .service-section {
-  padding-bottom: 3rem 0.5rem;
+  padding-bottom: 3rem;
 }
 
+.post_date {
+  text-align: left;
+  font-size: 80%;
+  font-weight: bold;
+}
 

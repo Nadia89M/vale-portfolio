@@ -83,12 +83,12 @@
             </div>
           </li> -->
           <li 
-            {% if 'services' in request.path %} 
+            {% if 'galleries' in request.path %} 
               class="nav-item active mr-3" 
             {% else %} 
               class="nav-item mr-3"
             {% endif %}>
-            <a class="nav-link" href="{% url 'services' %}">Services</a>
+            <a class="nav-link" href="{% url 'galleries' %}">Galleries</a>
           </li>
           <li 
             {% if 'portfolio' in request.path %} 

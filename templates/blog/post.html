@@ -14,6 +14,7 @@
                 <div class="card">
                     <img src="{{post.photo_main.url}}" alt="" class="mb-3 img-fluid card-img-top">
                     <div class="card-body">
+                        <p class="post_date">Posted on {{post.published_date|date:"M d, Y"}} by Marzia</p>
                         <p class="card-text">{{ post.content|safe}}</p>
                     </div>
                 </div>

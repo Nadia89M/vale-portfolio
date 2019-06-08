@@ -8,7 +8,7 @@
             <h1 class="text-center title">Marzia Melita</h1>
             <h3 class="text-center subtitle ">Photography</h3>
             <br>
-            <h4>Welcome, I am The Photologyst.<br>My Passion and creativity have brought me where I am, to you.<br>Now I am here to take care of your desire of photography.</h4>
+            <h4>Welcome, I am The Photologyst.<br>My passion and creativity brought me to you.<br>Now I am here to take care of your desire of photography.</h4>
             <br>
             <h4 class ="blog-title">I See, therefore I Shoot.</h4>
         </div>
@@ -30,11 +30,9 @@
 
     <div class="row featurette my-5">
         <div class="col-md-7">
-            <h3 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h3>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus
-                ac cursus commodo.</p>
-            <p><a class="btn btn-danger" href="{% url 'contact' %}" role="button">Get in Touch &raquo;</a></p>
+            <h3 class="featurette-heading">ME, <span class="text-muted">BEHIND THE LENSE</span></h3>
+            <p class="lead">When you choose your photographer, you are choosing to let them tell your story through their style, view, ideas and unique artistic way to see the world. So get to know me and you'll meet my Photography.</p>
+            <p><a class="btn btn-danger" href="{% url 'about' %}" role="button">Meet me &raquo;</a></p>
         </div>
         <div class="col-md-5">
             <img src="{% static 'img/profile-home.jpg' %}" alt="" class="img-fluid">
@@ -44,41 +42,43 @@
     <!-- Three columns of text below the carousel -->
     <div class="row text-center">
         <div class="col-md-12 py-5">
-            <h2 class="py-5">Services</h2>
+            <h2 class="py-5">GALLERIES</h2>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-lg-4 text-center service-section">
+        <div class="col-lg-3 text-center service-section">
             <div class="circular--landscape mb-5">
                 <img src="{% static 'img/img_1.jpg' %}" alt="">
             </div>
-            <h3>Service 1</h3>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
-                vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
-                cursus magna.</p>
-            <p><a class="btn btn-danger" href="{% url 'services' %}" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4 text-center service-section">
-            <div class="circular--landscape mb-5">
-                <img src="{% static 'img/img_2.jpg' %}" alt="">
+            <h3>TRAVEL</h3>
+            <p>Any other section of this site could not exist without the glue that keeps them all together: my love for Travel. This is my on-the-road gallery.</p>
+            <p><a class="btn btn-danger" href="/galleries#travel" role="button">View &raquo;</a></p>
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3 text-center service-section">
+            <div class="circular--landscape1 mb-5">
+                <img src="{% static 'img/THE_WORLD.JPG' %}" alt="">
             </div>
-            <h3>Service 2</h3>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
-                mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                condimentum nibh.</p>
-            <p><a class="btn btn-danger" href="{% url 'services' %}" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4 text-center service-section">
-            <div class="circular--landscape mb-5">
-                <img src="{% static 'img/img_3.jpg' %}" alt="">
+            <h3>THE WORLD</h3>
+            <p>Here you'll find a collection of shots from our Home, our stunning planet and its wonders.</p>
+            <p><a class="btn btn-danger" href="/galleries#world" role="button">View &raquo;</a></p>
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3 text-center service-section">
+            <div class="circular--landscape1 mb-5">
+                <img src="{% static 'img/EVENTS.JPG' %}" alt="">
             </div>            
-            <h3>Service 3</h3>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula
-                porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-                fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-danger" href="{% url 'services' %}" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
+            <h3>EVENTS</h3>
+            <p>These is about you. Your moments, your memories and your milestones in my shots.</p>
+            <p><a class="btn btn-danger" href="/galleries#events" role="button">View &raquo;</a></p>
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3 text-center service-section">
+            <div class="circular--landscape1 mb-5">
+                <img src="{% static 'img/WORKS.jpg' %}" alt="">
+            </div>            
+            <h3>WORKS</h3>
+            <p>Explore this section and be amazed by smiles, tails, collars and anything and anyone that can be a project.</p>
+            <p><a class="btn btn-danger" href="/galleries#works" role="button">View &raquo;</a></p>
+        </div><!-- /.col-lg-3 -->
     </div><!-- /.row -->
 
     <!-- /END THE FEATURETTES -->
@@ -89,7 +89,7 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-md-12">
-                <h2 class="py-5">Latest Projects</h2>
+                <h2 class="py-5">Latest Projects (wip)</h2>
             </div>
         </div>
         <div class="row text-center">
