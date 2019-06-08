@@ -6,6 +6,10 @@ body {
   min-height: 85vh;
 }
 
+.bg-dark {
+  background-color: black !important;
+}
+
 .nav-item {
   text-transform: uppercase;
 }
@@ -182,4 +186,14 @@ h2:after {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.btn-red {
+  border: 1px solid rgb(255, 1, 1);
+  color: rgb(255, 1, 1);
+}
+
+.btn-red:hover {
+  font-weight: bold;
+  color: rgb(255, 1, 1);
 }
