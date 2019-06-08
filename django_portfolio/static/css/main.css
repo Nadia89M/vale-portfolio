@@ -205,3 +205,12 @@ h2:after {
 .btn-galleries {
   float: right !important;
 }
+
+@media only screen and (min-width: 768px) {
+  .service {
+    margin: 3rem 0;
+  }
+  .g-text {
+    margin: 3rem;
+  }
+}
