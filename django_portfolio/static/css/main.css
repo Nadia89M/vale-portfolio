@@ -176,3 +176,10 @@ h2:after {
   font-weight: bold;
 }
 
+.service-img {
+  max-height: 400px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
