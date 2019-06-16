@@ -21,7 +21,7 @@ def view_category(request, slug):
 def view_subcategory(request, slug, subslug):
     category = get_object_or_404(Category, slug=slug)
     subcategory = get_object_or_404(Subcategory, slug=subslug)
-    photos = Photo.objects.filter(subcategory=subcategory)
+    photos = Photo.objects.filter(subcategory=subcategory).order_by('published_date')
     return render(request, 'categories/view_subcategory.html', {
         'category': category,
         'subcategory': subcategory,

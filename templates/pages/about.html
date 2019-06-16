@@ -1,72 +1,101 @@
 <!DOCTYPE html>
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 <!-- Marketing messaging and featurettes
       ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
 
 <div class="container marketing">
+  <!-- START THE FEATURETTES -->
 
-    <!-- START THE FEATURETTES -->
-
-    <div class="row text-center">
-        <div class="col-md-12">
-            <h2 class="py-5">About Me</h2>
-        </div>
+  <div class="row text-center">
+    <div class="col-md-12">
+      <h2 class="py-5">About Me</h2>
     </div>
+  </div>
 
-    <div class="row featurette my-5">
-        <div class="col-md-7">
-            <h3 class="featurette-heading">The Girl <span class="text-muted">behind the lense</span></h3>
-            <p class="lead my-3">There are many of us out there, Photographers.<br/>
-                You won't choose one because they are better than another, but because you've seen something in their work, you felt something looking at one of their pictures, because one of them actually made you stop and stare.<br/>
-                That's what I want from my Photography.<br/>
-                <br/>
-                <br/>
-                Whether you collect rare stamps, paint cats or create recipes, the number one rule is always: LOVE IT.<br/>
-                And I love Photography, that's how you know you're in good hands.</p>
-            <p><a class="btn btn-red" href="{% url 'contact' %}" role="button">Get in Touch &raquo;</a></p>
-        </div>
-        <div class="col-md-5">
-            <img src="{% static 'img/profile.jpg' %}" alt="" class="img-fluid">
-        </div>
+  <div class="row featurette my-5">
+    <div class="col-md-7">
+      <h3 class="featurette-heading">
+        The Girl <span class="text-muted">behind the lense</span>
+      </h3>
+      <p class="lead my-3">
+        There are many of us out there, Photographers.<br />
+        You won't choose one because they are better than another, but because
+        you've seen something in their work, you felt something looking at one
+        of their pictures, because one of them actually made you stop and
+        stare.<br />
+        That's what I want from my Photography.<br />
+        <br />
+        <br />
+        Whether you collect rare stamps, paint cats or create recipes, the
+        number one rule is always: LOVE IT.<br />
+        And I love Photography, that's how you know you're in good hands.
+      </p>
+      <p>
+        <a class="btn btn-red" href="{% url 'contact' %}" role="button"
+          >Get in Touch &raquo;</a
+        >
+      </p>
     </div>
-
-    <div class="row text-center">
-        <div class="col-md-12">
-            <h2 class="py-5">What you see is what you get
-            </h2>
-        </div>
+    <div class="col-md-5">
+      <img src="{% static 'img/profile.jpg' %}" alt="" class="img-fluid" />
     </div>
+  </div>
 
-    <!-- Three columns of text below the carousel -->
-    <div class="row mb-3">
-        <div class="col-lg-4 text-center service-section mb-3">
-            <div class="circular--landscape1 mb-5">
-                <img src="{% static 'img/PHOTOGRPAHY.jpg' %}" alt="">
-            </div> 
-            <h3>PHOTOGRAPHY</h3>
-            <p>Think about Photography as the background of the play. Whether you're looking for a collection of stills, a poster or a business presentation, <i>the art of writing with light</i> is where every project begins.
-            </p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4 text-center service-section mb-3">
-            <div class="circular--landscape mb-5">
-                <img src="{% static 'img/POST.PNG' %}" alt="">
-            </div> 
-            <h3>POST-PRODUCTION<br/>& RETOUCH</h3>
-            <p>This is the behind-the-scene of the play. <br/>You look at the work done, you amend it, you improve it, you decide to start it all over again. This is the second most important part of the project as creativity and imagination can take Photography to the next level.</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4 text-center service-section mb-3">
-            <div class="circular--landscape mb-5">
-                <img src="{% static 'img/MEDIA.jpg' %}" alt="">
-            </div> 
-            <h3>MEDIA CREATION</h3>
-            <p>This is how you want to present your project to the audience: digitally through websites, web pages and presentations, or materially with posters, invitations and leaflets.</p>
-        </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
+  <div class="row text-center">
+    <div class="col-md-12">
+      <h2 class="py-5">What you see is what you get</h2>
+    </div>
+  </div>
 
-    <!-- /END THE FEATURETTES -->
+  <!-- Three columns of text below the carousel -->
+  <div class="row mb-3">
+    <div class="col-lg-4 text-center service-section mb-3">
+      <div class="circular--landscape1 mb-5">
+        <img src="{% static 'img/PHOTOGRPAHY.jpg' %}" alt="" />
+      </div>
+      <div class="title-h">
+        <h3>PHOTOGRAPHY</h3>
+      </div>
+      <p>
+        Think about Photography as the background of the play. Whether you're
+        looking for a collection of stills, a poster or a business presentation,
+        <i>the art of writing with light</i> is where every project begins.
+      </p>
+    </div>
+    <!-- /.col-lg-4 -->
+    <div class="col-lg-4 text-center service-section mb-3">
+      <div class="circular--landscape mb-5">
+        <img src="{% static 'img/POST.PNG' %}" alt="" />
+      </div>
+      <div class="title-h">
+        <h3>POST-PRODUCTION<br />& RETOUCH</h3>
+      </div>
+      <p>
+        This is the behind-the-scene of the play. <br />You look at the work
+        done, you amend it, you improve it, you decide to start it all over
+        again. This is the second most important part of the project as
+        creativity and imagination can take Photography to the next level.
+      </p>
+    </div>
+    <!-- /.col-lg-4 -->
+    <div class="col-lg-4 text-center service-section mb-3">
+      <div class="circular--landscape mb-5">
+        <img src="{% static 'img/MEDIA.jpg' %}" alt="" />
+      </div>
+      <div class="title-h">
+        <h3>MEDIA CREATION</h3>
+      </div>
+      <p>
+        This is how you want to present your project to the audience: digitally
+        through websites, web pages and presentations, or materially with
+        posters, invitations and leaflets.
+      </p>
+    </div>
+    <!-- /.col-lg-4 -->
+  </div>
+  <!-- /.row -->
 
+  <!-- /END THE FEATURETTES -->
 </div>
 {% endblock %}

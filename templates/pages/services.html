@@ -1,69 +1,83 @@
 <!DOCTYPE html>
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 
 <div class="container marketing">
-    <h2 class="text-center pt-5">Galleries</h2>
+  <h2 class="text-center pt-5">Services</h2>
 
+  <!-- START THE GALLERIES -->
 
-    <!-- START THE GALLERIES -->
-
-    <div class="row service">
-        <div class="col-md-7 p-5">
-            <h4 class="text-center sub">TRAVEL</h4>
-            <p class="lead g-text text-center">This is your window on anything about Travel:<br/> trains, noodles, backpacks, shoes, hats.<br/> 
-                Photography and Travel make one of the best marriages, combining our natural curiosity and search for the new and the love of having memories of the places you've been to, people you've met and food you've tasted. 
-                </p>
-        </div>
-        <div class="col-md-5">
-            <img src="{% static 'img/TRAVEL.jpg' %}" alt="" class="my-3 img-fluid service-img">
-        </div>
+  <div class="row service p-5">
+    <div class="col-md-7 px-3">
+      <h4 class="text-center sub">PHOTOGRAPHY</h4>
+      <p class="lead g-text text-center">
+        It all starts here. The ideas, the projects, the images, they all take
+        shape with the ‘’simple’’ click of the camera. This my core, the main
+        job is done behind the lense, with lights, background, flash and...my
+        eyes. This is where we will work together with poses, smiles, walls,
+        chairs and anything that will let us build the shooting.
+      </p>
     </div>
-
-    <div class="row service">
-        <div class="col-md-5">
-            <img src="{% static 'img/THE_WORLD.jpg' %}" alt="" class="my-3 img-fluid service-img">
-        </div>
-        <div class="col-md-7 p-5">
-            <h4 class="text-center sub">THE WORLD</h4>
-            <p class="lead g-text text-center">Every great show needs a great set and what more could we ask than our wonderful planet with its hills and lakes, mountains and seas, deserts and oceans? <br/>Everything is a subject. Everything can surprise.
-                
-                </p>
-        </div>
+    <div class="col-md-5">
+      <img
+        src="{% static 'img/PHOTOGRPAHY.jpg' %}"
+        alt=""
+        class="my-3 img-fluid service-img"
+      />
     </div>
+  </div>
 
-    <div class="row service">
-        <div class="col-md-7 p-5">
-            <h4 class="text-center sub">EVENTS</h4>
-            <p class="lead g-text text-center">
-                This is all about you. <br/>Every fabric, every guest, every flower, literally every detail becomes essential when you're creating stills of your most special memories.<br/> 
-                </p>
-        </div>
-        <div class="col-md-5">
-            <img src="{% static 'img/EVENTS.JPG' %}" alt="" class="my-3 img-fluid service-img">
-        </div>
+  <div class="row service p-5">
+    <div class="col-md-5">
+      <img
+        src="{% static 'img/POST.PNG' %}"
+        alt=""
+        class="my-3 img-fluid service-img"
+      />
     </div>
-
-    <div class="row service">
-        <div class="col-md-5">
-            <img src="{% static 'img/WORKS.jpg' %}" alt="" class="my-3 img-fluid service-img">
-        </div>
-        <div class="col-md-7 p-5">
-            <h4 class="text-center sub">WORKS</h4>
-            <p class="lead g-text text-center">Imagine it, draft it, make it.
-                Here you'll find the results of ideas, collaborations, projects or simply fun days with friends wanting to discover their side of the lense.<br/>
-                These are the projects that once used to be ''just an idea'', turned into photoshoots, portfolios and personal collections.<br/>
-                </p>
-        </div>
+    <div class="col-md-7 px-3">
+      <h4 class="text-center sub">POST-PRODUCTION & RETOUCH</h4>
+      <p class="lead g-text text-center">
+        Phase two of the shooting: looking at what we’ve done and enhance it.
+        Retouching doesn’t necessary mean making your hair longer or your legs
+        thinner, it might mean highlighting your curves against a wonderful
+        purple lavender field or turning your portrait into a vintage
+        black&white still. The rule here is: don’t overdue.
+      </p>
     </div>
-    <div class="row mb-5">
-        <div class="col-12">
-            <p class="text-left"><a class="btn btn-red btn-galleries" href="{% url 'categories' %}" role="button">Portfolio &raquo;</a></p>
-        </div>
+  </div>
+
+  <div class="row service p-3">
+    <div class="col-md-7 px-5">
+      <h4 class="text-center sub">MEDIA CREATION</h4>
+      <p class="lead g-text text-center">
+        Baby showers invites, wedding cards, restaurant menu, you say it!
+        Creativity, a context and a laptop are our tools. Whether you need to
+        prepare cards to inform people of your upcoming birthday party or a
+        business presentation, we’ll create templates, draw lines and add images
+        for a neat and target product.
+      </p>
     </div>
+    <div class="col-md-5">
+      <img
+        src="{% static 'img/MEDIA.jpg' %}"
+        alt=""
+        class="my-3 img-fluid service-img"
+      />
+    </div>
+  </div>
+  <div class="row mb-5">
+    <div class="col-12">
+      <p class="text-left">
+        <a
+          class="btn btn-red btn-galleries"
+          href="{% url 'categories' %}"
+          role="button"
+          >Portfolio &raquo;</a
+        >
+      </p>
+    </div>
+  </div>
 
-    <!-- /END THE SERVICES -->
-
+  <!-- /END THE SERVICES -->
 </div>
 {% endblock %}

@@ -1,115 +1,118 @@
 <!DOCTYPE html>
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 <section id="header">
-    <div class="home-container">
-        <div class = "home-centered">
-            <h1 class="text-center title">Marzia Melita</h1>
-            <h3 class="text-center subtitle ">Photography</h3>
-            <br>
-            <h4>Welcome, I am The Photologyst.<br>My passion and creativity brought me to you.<br>Now I am here to take care of your desire of photography.</h4>
-            <br>
-            <h4 class ="blog-title">I See, therefore I Shoot.</h4>
-        </div>
+  <div class="home-container">
+    <div class="home-centered">
+      <h1 class="text-center title">Marzia Melita</h1>
+      <h3 class="text-center subtitle ">Photography</h3>
+      <br />
+      <h4>
+        Welcome, I am The Photologyst.<br />My passion and creativity brought me
+        to you.<br />Now I am here to take care of your desire of photography.
+      </h4>
+      <br />
+      <h4 class="blog-title">I See, therefore I Shoot.</h4>
     </div>
+  </div>
 </section>
 <!-- Marketing messaging and featurettes
       ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
 
 <div class="container marketing">
+  <!-- START THE FEATURETTES -->
 
-    <!-- START THE FEATURETTES -->
-
-    <div class="row text-center">
-        <div class="col-md-12 py-5">
-            <h2 class="title">Marzia Melita <br/> <span class="subtitle ">Photography</span></h2>
-        </div>
+  <div class="row text-center">
+    <div class="col-md-12 py-5">
+      <h2 class="title">
+        Marzia Melita <br />
+        <span class="subtitle ">Photography</span>
+      </h2>
     </div>
+  </div>
 
-    <div class="row featurette my-5">
-        <div class="col-md-7">
-            <h3 class="featurette-heading">ME, <span class="text-muted">BEHIND THE LENSE</span></h3>
-            <p class="lead">When you choose your photographer, you are choosing to let them tell your story through their style, perspective, ideas and unique artistic way to see the world. So get to know me and you'll meet my Photography.</p>
-            <p><a class="btn btn-red" href="{% url 'about' %}" role="button">Meet me &raquo;</a></p>
-        </div>
-        <div class="col-md-5">
-            <img src="{% static 'img/profile-home.jpg' %}" alt="" class="img-fluid">
-        </div>
+  <div class="row featurette my-5">
+    <div class="col-md-7">
+      <h3 class="featurette-heading">
+        ME, <span class="text-muted">BEHIND THE LENSE</span>
+      </h3>
+      <p class="lead">
+        When you choose your photographer, you are choosing to let them tell
+        your story through their style, perspective, ideas and unique artistic
+        way to see the world. So get to know me and you'll meet my Photography.
+      </p>
+      <p>
+        <a class="btn btn-red" href="{% url 'about' %}" role="button"
+          >Meet me &raquo;</a
+        >
+      </p>
     </div>
-
-    <!-- Three columns of text below the carousel -->
-    <div class="row text-center">
-        <div class="col-md-12 py-5">
-            <h2 class="py-5">GALLERIES</h2>
-        </div>
+    <div class="col-md-5">
+      <img src="{% static 'img/profile-home.jpg' %}" alt="" class="img-fluid" />
     </div>
+  </div>
 
-    <div class="row">
-        <div class="col-lg-3 text-center service-section mb-3">
-            <div class="circular--landscape1 mb-5">
-                <img src="{% static 'img/TRAVEL.jpg' %}" alt="">
-            </div>
-            <h3>TRAVEL</h3>
-            <p class="gallery-text">Any other section of this site could not exist without the glue that keeps them all together: my love for Travel. This is my on-the-road gallery.</p>
-            <p><a class="btn btn-red" href="/galleries#travel" role="button">View &raquo;</a></p>
-        </div><!-- /.col-lg-3 -->
-        <div class="col-lg-3 text-center service-section mb-3">
-            <div class="circular--landscape1 mb-5">
-                <img src="{% static 'img/THE_WORLD.jpg' %}" alt="">
-            </div>
-            <h3>THE WORLD</h3>
-            <p class="gallery-text">Here you'll find a collection of shots from our Home, our stunning planet and its wonders.</p>
-            <p><a class="btn btn-red" href="/galleries#world" role="button">View &raquo;</a></p>
-        </div><!-- /.col-lg-3 -->
-        <div class="col-lg-3 text-center service-section mb-3">
-            <div class="circular--landscape1 mb-5">
-                <img src="{% static 'img/EVENTS.JPG' %}" alt="">
-            </div>            
-            <h3>EVENTS</h3>
-            <p class="gallery-text">This is about you. Your moments, your memories and your milestones in my shots.</p>
-            <p><a class="btn btn-red" href="/galleries#events" role="button">View &raquo;</a></p>
-        </div><!-- /.col-lg-3 -->
-        <div class="col-lg-3 text-center service-section mb-3">
-            <div class="circular--landscape1 mb-5">
-                <img src="{% static 'img/WORKS.jpg' %}" alt="">
-            </div>            
-            <h3>WORKS</h3>
-            <p class="gallery-text">Explore this section and be amazed by smiles, tails, flowers and anything and anyone that can be a project.</p>
-            <p><a class="btn btn-red" href="/galleries#works" role="button">View &raquo;</a></p>
-        </div><!-- /.col-lg-3 -->
-    </div><!-- /.row -->
-
-    <!-- /END THE FEATURETTES -->
-
-</div>
-<!-- Categories -->
-<section id="categories" class="py-5">
+  <div class="row text-center">
+    <div class="col-md-12 py-3">
+      <h2 class="py-5">Portfolio</h2>
+    </div>
+  </div>
+  <div class="row px-5">
+    <div class="col-12 text-center">
+        <p>
+            You are one click away from discovering a new way to see the world.</br>Mine.</p>
+          </p>
+        <img class="img-fluid portfolio-img p-3" src="{% static 'img/portfolio.jpg' %}" />
+    </div>
+    </div>
+  <div class="row mb-5">
+    <div class="col-12">
+      <p class="text-left">
+        <a
+          class="btn btn-red btn-galleries"
+          href="{% url 'categories' %}"
+          role="button"
+          >Portfolio &raquo;</a
+        >
+      </p>
+    </div>
+  </div>
+  <!-- Categories -->
+  <section id="categories" class="py-5">
     <div class="container">
-        <div class="row text-center">
-            <div class="col-md-12">
-                <h2 class="py-5">Latest Projects (wip)</h2>
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h2 class="py-5">Latest Projects (wip)</h2>
+        </div>
+      </div>
+      <div class="row text-center">
+        {% if subcategories %} {% for subcategory in subcategories %}
+        <div class="col-md-4 mb-3">
+          <div class="text-container">
+            <img
+              src="{{ subcategory.subcategory_photo.url }}"
+              alt=""
+              class="mb-3 img-fluid homepage-img"
+            />
+            <div class="centered">
+              <h5>
+                <a
+                  href="portfolio/{{ subcategory.category.slug }}/{{
+                    subcategory.slug
+                  }}"
+                  >{{ subcategory.name }}</a
+                >
+              </h5>
             </div>
+          </div>
         </div>
-        <div class="row text-center">
-            {% if subcategories %}
-                {% for subcategory in subcategories %}
-                <div class="col-md-4 mb-3">
-                    <div class="text-container">
-                        <img src="{{subcategory.subcategory_photo.url}}" alt="" class="mb-3 img-fluid homepage-img">
-                        <div class="centered">
-                            <h5><a href="portfolio/{{ subcategory.category.slug }}/{{subcategory.slug}}">{{ subcategory.name }}</a></h5>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            {% else %}
-                <div class="col-md-12">
-                    <p>No Categories Available</p>
-                </div>
-            {% endif %}
+        {% endfor %} {% else %}
+        <div class="col-md-12">
+          <p>No Categories Available</p>
         </div>
+        {% endif %}
+      </div>
     </div>
-</section>
-{% endblock %}
+  </section>
+  {% endblock %}
+</div>
