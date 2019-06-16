@@ -211,13 +211,44 @@ h2:after {
   color: rgb(255, 1, 1);
 }
 
+.btn-white {
+  border: 1px solid white;
+  color: white;
+}
+
+.btn-white:hover {
+  font-weight: bold;
+  color: white;
+}
+
 .btn-galleries {
   float: right !important;
 }
 
-.portfolio-img {
-  width: 70%;
-  height: auto;
+.parallax {
+  /* The image used */
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(255, 1, 1, 0.65)
+    ),
+    url('../img/portfolio.jpg') fixed no-repeat center center / cover;
+  /* background-image: url('../img/portfolio.jpg'); */
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  /* background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.parallax-text {
+  padding-top: 200px;
+  color: white;
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
