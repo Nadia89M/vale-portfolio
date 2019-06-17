@@ -6,12 +6,16 @@ body {
   min-height: 85vh;
 }
 
-.bg-dark {
-  background-color: black !important;
+.bg-light {
+  background-color: transparent !important;
 }
 
 .nav-item {
   text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black !important;
 }
 
 .text-container {
@@ -62,12 +66,8 @@ body {
   text-decoration: none;
 }
 .home-container {
-  background: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.5),
-      rgba(255, 1, 1, 0.65)
-    ),
-    url('../img/bg-picture2.jpg') no-repeat center center / cover;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url('../img/bg2.png') no-repeat center center / cover;
   /* background: linear-gradient(to right,  rgba(0, 0, 0, 0.3),  rgba(0, 0, 0, 0.7)), url("../img/img_3.jpg") no-repeat center center / cover; */
   justify-content: center;
   height: 100vh;
@@ -99,15 +99,11 @@ h2:after {
   width: 100px;
   margin: 0 auto;
   margin-top: 30px;
-  border-bottom: 2px solid rgb(255, 1, 1);
+  border-bottom: 2px solid orange;
 }
 
 .card-title {
   font-weight: bold;
-}
-
-.subtitle {
-  letter-spacing: 8px;
 }
 
 .circular--landscape,
@@ -151,16 +147,6 @@ h2:after {
   text-transform: capitalize;
 }
 
-.blog-link {
-  font-size: 120%;
-  font-weight: bold;
-}
-
-.blog-title {
-  font-family: 'Dancing Script', cursive;
-  text-transform: capitalize;
-}
-
 .post-container {
   margin: 3rem 0.5rem;
 }
@@ -201,14 +187,14 @@ h2:after {
   margin-right: auto;
 }
 
-.btn-red {
-  border: 1px solid rgb(255, 1, 1);
-  color: rgb(255, 1, 1);
+.btn-orange {
+  border: 1px solid orange;
+  color: orange;
 }
 
-.btn-red:hover {
+.btn-orange:hover {
   font-weight: bold;
-  color: rgb(255, 1, 1);
+  color: orange;
 }
 
 .btn-white {
@@ -227,12 +213,8 @@ h2:after {
 
 .parallax {
   /* The image used */
-  background: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.5),
-      rgba(255, 1, 1, 0.65)
-    ),
-    url('../img/portfolio.jpg') fixed no-repeat center center / cover;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url('../img/bg2.png') fixed no-repeat center center / cover;
   /* background-image: url('../img/portfolio.jpg'); */
 
   /* Set a specific height */
@@ -249,6 +231,24 @@ h2:after {
   padding-top: 200px;
   color: white;
   text-align: center;
+}
+
+a .icon {
+  height: 40px;
+  width: 40px;
+  color: orange;
+}
+
+.round {
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px grey;
+  border: 1px solid grey;
+  height: 300px;
+  width: auto;
+}
+
+.bg-orange {
+  background: orange !important;
 }
 
 @media only screen and (min-width: 768px) {
