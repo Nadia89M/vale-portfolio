@@ -6,6 +6,10 @@ body {
   min-height: 85vh;
 }
 
+.navbar {
+  border-bottom: solid 1px orange;
+}
+
 .bg-light {
   background-color: transparent !important;
 }
