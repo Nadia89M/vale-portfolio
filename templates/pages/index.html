@@ -44,9 +44,7 @@
         mollit anim id est laborum.
       </p>
       <p>
-        <a class="btn btn-orange" href="{% url 'contact' %}" role="button"
-          >Contact me &raquo;</a
-        >
+        <a class="btn btn-orange" href="{% url 'contact' %}" role="button">Contact me &raquo;</a>
       </p>
     </div>
     <div class="col-md-5 text-center">
@@ -62,16 +60,10 @@
 <div class="parallax">
   <div class="container">
     <h3 class="parallax-text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     </h3>
     <p class="text-left">
-      <a
-        class="btn btn-white btn-galleries"
-        href="{% url 'categories' %}"
-        role="button"
-        >Portfolio &raquo;</a
-      >
+      <a class="btn btn-white btn-galleries" href="{% url 'categories' %}" role="button">Portfolio &raquo;</a>
     </p>
   </div>
 </div>
@@ -108,11 +100,7 @@
         {% if categories %} {% for category in categories %}
         <div class="col-md-4 mb-3">
           <div class="text-container">
-            <img
-              src="{{ category.category_photo.url }}"
-              alt=""
-              class="mb-3 img-fluid homepage-img"
-            />
+            <img src="{{ category.category_photo.url }}" alt="" class="mb-3 img-fluid homepage-img" />
             <div class="centered">
               <h5>
                 <a href="portfolio/{{ category.slug }}">{{ category.name }}</a>
