@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 {% extends 'base.html' %} {% load static %} {% block content %}
 <section id="header">
-  <div class="home-container">
-    <div class="home-centered">
-      <h1 class="text-center title">Eugenio Basso</h1>
-      <h3 class="text-center subtitle ">Photography</h3>
-      <br />
-      <h4>
-        Italian textile designer living in London
-      </h4>
+  <div>
+    <div class="row">
+      <div class="col-xl-5 intro-container">
+        <div class="intro text-left">
+          <img src="{% static 'img/logo2.png' %}" alt="" class="img-fluid welcome">
+          <h4>Hi! I'm Valentino Grancagnolo, a UI Designer. Have a story in your mind? Hire me, I
+            will craft your ideas
+            into
+            a great design.</h4>
+            <div class="text-center">
+                <a class="btn btn-orange mt-3" href="{% url 'contact' %}" role="button">Hire Me &raquo;</a>
+            </div>
+        </div>
+      </div>
+      <div class="col-xl-7 illustration-container">
+        <img src="{% static 'img/illustration.png' %}" alt="" class="img-fluid illustration">
+      </div>
     </div>
   </div>
 </section>
@@ -22,8 +31,7 @@
   <div class="row text-center">
     <div class="col-md-12 py-5">
       <h2 class="title">
-        Eugenio Basso <br />
-        <span>Photography</span>
+        Valentino Grancagnolo <br />
       </h2>
     </div>
   </div>
@@ -31,20 +39,17 @@
   <div class="row featurette my-5">
     <div class="col-md-7">
       <h3 class="featurette-heading">
-        Italian textile designer living in London.
+        UI Designer
       </h3>
       <p class="lead">
-        Taking inspiration from the natural world, specifically animals and plants. Photography has encouraged me to
-        become attentive to details, and refine my work in order to improve the quality. Through drawing natural
-        subjects, I am able to create innovative designs. Combined with historical themes, I am able to take inspiration
-        to develop new exiting projects. Collectively this has inspired me to produce my unique designs.
+          I'm a Graphic Designer turned in UI designer. My determination for continuous education has spurred me to a UI Design Certificate. I comb ine the soft skills gained from my experience in sales as well as the technical and creative skills required for a designer. I have a skilled verbal and written command of both Italian and English.
       </p>
       <p>
-        <a class="btn btn-orange" href="{% url 'contact' %}" role="button">Contact me &raquo;</a>
+        <a class="btn btn-orange" href="{% url 'categories' %}" role="button">Portfolio &raquo;</a>
       </p>
     </div>
     <div class="col-md-5 text-center">
-      <img src="{% static 'img/eugenio.jpeg' %}" alt="" class="round img-fluid" />
+      <img src="{% static 'img/photo.png' %}" alt="" class="round img-fluid" />
     </div>
   </div>
 </div>
@@ -53,7 +58,7 @@
       <h2 class="py-5">Portfolio</h2>
     </div>
   </div> -->
-<div class="parallax">
+<!-- <div class="parallax">
   <div class="container">
     <h3 class="parallax-text">
       Give a look to some of my works
@@ -62,7 +67,7 @@
       <a class="btn btn-white btn-galleries" href="{% url 'categories' %}" role="button">Portfolio &raquo;</a>
     </p>
   </div>
-</div>
+</div> -->
 <!-- <div class="row px-5">
     <div class="col-12 text-center">
         <p>
@@ -84,7 +89,7 @@
     </div>
   </div> -->
 <!-- Categories -->
-<div class="container marketing">
+<div class="container">
   <section id="categories" class="py-5">
     <div class="container">
       <div class="row text-center">
