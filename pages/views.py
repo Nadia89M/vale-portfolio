@@ -31,8 +31,8 @@ def contact(request):
             send_mail(
               'Contact Inquiry',
               'There has been an inquiry. Sign into the admin panel for more info.',
-              'nadia.mohamed89@gmail.com',
-              ['nadia.mohamed89@gmail.com'],
+              'valentino.grancagnolo.com',
+              ['valentino.grancagnolo.com'],
             )
             return thanks(request)
 
