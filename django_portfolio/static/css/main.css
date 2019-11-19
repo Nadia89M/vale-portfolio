@@ -282,3 +282,13 @@ a .icon {
     margin: 3rem;
   }
 }
+
+.lb-outerContainer {
+  width: 80%;
+  height: auto;
+}
+
+.lb-image {
+  width: 100%;
+  height: auto;
+}
