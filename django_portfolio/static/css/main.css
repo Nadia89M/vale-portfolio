@@ -284,11 +284,11 @@ a .icon {
 }
 
 .lb-outerContainer {
-  width: 80%;
-  height: auto;
+  width: 80% !important;
+  height: auto !important;
 }
 
 .lb-image {
-  width: 100%;
-  height: auto;
+  width: 100% !important;
+  height: auto !important;
 }
