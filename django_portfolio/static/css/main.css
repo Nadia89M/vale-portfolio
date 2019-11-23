@@ -3,6 +3,10 @@ body {
   color: #2C2C2C;
 }
 
+.header-row {
+  margin: 0;
+}
+
 .content {
   min-height: 85vh;
 }

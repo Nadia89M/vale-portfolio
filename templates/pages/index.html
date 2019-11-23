@@ -2,7 +2,7 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 <section id="header">
   <div>
-    <div class="row">
+    <div class="row header-row">
       <div class="col-xl-5 intro-container">
         <div class="intro text-left">
           <img src="{% static 'img/logo2.png' %}" alt="" class="img-fluid welcome">
@@ -10,9 +10,9 @@
             will craft your ideas
             into
             a great design.</h4>
-            <div class="text-center">
-                <a class="btn btn-orange mt-3" href="{% url 'contact' %}" role="button">Hire Me &raquo;</a>
-            </div>
+          <div class="text-center">
+            <a class="btn btn-orange mt-3" href="{% url 'contact' %}" role="button">Hire Me &raquo;</a>
+          </div>
         </div>
       </div>
       <div class="col-xl-7 illustration-container">
@@ -42,7 +42,10 @@
         UI Designer
       </h3>
       <p class="lead">
-          I'm a Graphic Designer turned in UI designer. My determination for continuous education has spurred me to a UI Design Certificate. I comb ine the soft skills gained from my experience in sales as well as the technical and creative skills required for a designer. I have a skilled verbal and written command of both Italian and English.
+        I'm a Graphic Designer turned in UI designer. My determination for continuous education has spurred me to a UI
+        Design Certificate. I combine the soft skills gained from my experience in sales as well as the technical and
+        creative skills required for a designer. I have a skilled verbal and written command of both Italian and
+        English.
       </p>
       <p>
         <a class="btn btn-orange" href="{% url 'categories' %}" role="button">Portfolio &raquo;</a>
